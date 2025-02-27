@@ -1,24 +1,24 @@
 /* 上傳網頁時調整 */
-.MA{
+#MA{
     width: calc(100% - 20px);
     max-width: 1250px;
     margin: auto;
   }
 
 
-.MA article{
+#MA article{
     padding: 60px 0px;
 }
 
   
 /* header */
 
-.MA .banner source, .MA .banner img{
+#MA .banner source, #MA .banner img{
 width: 100%;
 display: block;
 }
 
-.MA .company_container{
+#MA .company_container{
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -29,7 +29,7 @@ display: block;
     
 }
 
-#company{
+#MA #company{
     background-image: url("./img/MA_background_work.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,15 +37,15 @@ display: block;
     
 }
 
-.company_container img{
+#MA .company_container img{
     width: 50%;
 }
 
-.company_container p{
+#MA .company_container p{
     margin-bottom: 8px;
 }
 
-.company_container>div{
+#MA .company_container>div{
     padding-right: 40px;
 }
 
@@ -53,28 +53,28 @@ display: block;
 
 
 @media screen and (max-width:800px){
-    .MA .company_container{
+    #MA .company_container{
         flex-direction: column;
         
     }
 
-    .MA .company_container>div{
+    #MA .company_container>div{
         padding: 0px 20px;
     }
-    .MA .company_container img{
+    #MA .company_container img{
         width: 100%;
     }
   }
 
 
-.MA .plan_contianer{
+#MA .plan_contianer{
     width: 100%;
     max-width: 800px;  
       
     
 }
 
-.MA .plan_time_wrapper{
+#MA .plan_time_wrapper{
     background: linear-gradient(to left, #1E335F, #00657C);
     width: calc(100% - 40px);
     display: flex;
@@ -85,15 +85,15 @@ display: block;
 
 }
 
-#plan p, #plan h2, #time h2{
+#MA #plan p, #plan h2, #time h2{
     color: white;
 }
 
-#plan h2::after, #time h2::after{
+#MA #plan h2::after, #time h2::after{
     background-color: white;
 }
 
-.circle {
+#MA .circle {
     width: 100px;
     height: 100px;
     background-color: #ffffff;
@@ -116,30 +116,30 @@ display: block;
     }
 }
 
-.circle p{
+#MA .circle p{
     color: #00657C;
     font-size: 20px;
     font-weight: bold;
 }
 
-.schedule_container{
+#MA .schedule_container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-self: center;
     flex-wrap: wrap;
 }
-.schedule>p{
+#MA .schedule>p{
     color: white;
     margin: 10px 0px 0px 0px;
     
 }
-.MA .icon_right{
+#MA .icon_right{
     width: 20px;
     padding-bottom: 20px;
 }
 
-.MA .schedule{
+#MA .schedule{
     margin: 0px 20px 0px;
     display: flex;
     flex-direction: column;
@@ -147,21 +147,21 @@ display: block;
     width: 126px;
 }
 @media screen and (max-width:800px){
-    .MA .schedule_container{
+    #MA .schedule_container{
         max-width: 500px;
     }
 
-    .MA .schedule, .MA .icon_right{
+    #MA .schedule, #MA .icon_right{
         margin-bottom: 30px;
     }
 
-    .MA .schedule:last-of-type {
+    #MA .schedule:last-of-type {
         margin-right: 40px;
     }
 }
 
 @media screen and (max-width:450px){
-    .MA .schedule_container{
+    #MA .schedule_container{
         max-width: 206px;
     }
 }
@@ -183,7 +183,7 @@ display: block;
 }
 
 /* =======KD豐富生活========= */
-.MA .life_card{
+#MA .life_card{
     padding: 30px;
     box-shadow: 0px 0px 8px rgba(0, 101, 124, 0.2);
     background:radial-gradient(circle at 50% 50%, #ecf9ff 20%, #ffffff 60%);
@@ -191,7 +191,7 @@ display: block;
   }
 
 
-.MA .life_container{
+#MA .life_container{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -200,26 +200,26 @@ display: block;
     margin: 0px 0px 20px;
 }
 
-.MA .life_card ul{
+#MA .life_card ul{
     padding: 0px 0px 0px 20px;
   }
 
-.MA .no_reverse{
+#MA .no_reverse{
     flex-direction: row; 
 }
 
 @media screen and (max-width:900px){
-    .MA .life_container{
+    #MA .life_container{
         flex-direction: column;
         align-items: flex-start;
     }
-    .MA .life_card{
+    #MA .life_card{
         padding: 0 0 0 20px;
         box-shadow: none;
         background: none;
         max-width: 100%; 
     }
-    .MA .life_card ul{
+    #MA .life_card ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2欄 */
         gap: 0px 40px; /* 欄間距 */
@@ -229,17 +229,17 @@ display: block;
 
 
 @media screen and (max-width:700px){
-    .MA .life_card .ul_long{
+    #MA .life_card .ul_long{
         grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width:500px){
-    .MA .life_card ul{
+    #MA .life_card ul{
         grid-template-columns: 1fr;
     }
 }
-.MA .good{
+#MA .good{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -247,13 +247,13 @@ display: block;
 }
 
 
-#life{
+#MA #life{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#CTA{
+#MA #CTA{
     background-color: #ecf9ff;
     display: flex;
     justify-content: center;  
@@ -264,7 +264,7 @@ display: block;
     width: calc(100% - 40px);
 }
 
-#CTA a{
+#MA #CTA a{
     background: linear-gradient(to left, #1E335F, #00657C);
     color: white;
     padding: 15px 80px;
@@ -273,6 +273,6 @@ display: block;
     text-decoration: none;
   }
 
-#CTA a:hover{
+#MA #CTA a:hover{
     background: linear-gradient(to left, #2f529d, #1da1be);
 }

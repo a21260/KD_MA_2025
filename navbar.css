@@ -1,4 +1,4 @@
-.MA nav{
+#MA nav{
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     background-color: #1E335F;
   }
   
-.MA nav a{
+#MA nav a{
   position: relative; /* 讓 ::after 相對於 <a> 定位 */
   padding: 10px 25px;
   margin: 0px;
@@ -15,11 +15,11 @@
   text-decoration: none;
 }
 
-.MA nav a:last-child{
+#MA nav a:last-child{
   background-color: #00657C;
 }
 
-.MA nav a::after {
+#MA nav a::after {
   content: ""; /* 產生一條橫線 */
   position: absolute;
   left: 50%; /* 初始位置在中間 */
@@ -31,12 +31,12 @@
   transform: translateX(-50%); /* 確保線條居中 */
 }
 
-.MA nav a:hover::after {
+#MA nav a:hover::after {
   width: 60%; /* 滑鼠移上時展開 */
 }
 
 @media screen and (max-width:500px){
-  .nav_link{
+  #MA .nav_link{
       padding: 10px 10px;
 
   }

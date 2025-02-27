@@ -1,17 +1,17 @@
-.box_wrapper{
+#MA .box_wrapper{
   overflow: hidden;
 }
 
-.box_wrapper ol{
+#MA .box_wrapper ol{
   padding: 0px 30px 30px 45px;
 }
 
-a{
+#MA a{
   color: unset;
   transition: 400ms transform ease;
 }
 
-input[type="checkbox"] {
+#MA input[type="checkbox"] {
   position: absolute;
   margin: 0;
   width: 100%;
@@ -23,7 +23,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.icon_open{
+#MA .icon_open{
   position: absolute;
   margin: 0;
   width: 20px;
@@ -36,16 +36,16 @@ input[type="checkbox"] {
   transition: transform 0.3s ease-in-out;  
 }
 
-input[type="checkbox"]:checked + .icon_open {
+#MA input[type="checkbox"]:checked + .icon_open {
   transform: rotate(180deg);
 }
 
-input[type="checkbox"]:checked ~ .box_content {
+#MA input[type="checkbox"]:checked ~ .box_content {
   grid-template-rows: 1fr;
 }
 
 
-.box_container{
+#MA .box_container{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -53,7 +53,7 @@ input[type="checkbox"]:checked ~ .box_content {
   gap: 10px;
   margin: auto;
 }
-.box{
+#MA .box{
   position: relative;
   border-radius: 8px;
   width: calc(50% - 10px);
@@ -61,29 +61,29 @@ input[type="checkbox"]:checked ~ .box_content {
   box-shadow: 0px 0px 6px rgba(0, 101, 124, 0.3);
 }
 
-.box_header{
+#MA .box_header{
   background-color: #ffffff;
 }
 
-.box_content {
+#MA .box_content {
   display: grid;
   grid-template-rows: 0fr;
   transition: 400ms grid-template-rows ease;
 }
 
-.box_header_content{
+#MA .box_header_content{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.box_header_content span p{
+#MA .box_header_content span p{
   display: inline-block;
 }
 
 
-.box_header p{
+#MA .box_header p{
   background-color: #fff5b3;
   color: rgb(0, 0, 0);
   padding: 3px 15px;
@@ -91,21 +91,21 @@ input[type="checkbox"]:checked ~ .box_content {
   margin: 5px 5px;
 }
 
-.box_header h3{
+#MA .box_header h3{
   margin: 0px 15px 0px 5px;
 }
 
-.box_header img{
+#MA .box_header img{
   height: 90px;
   margin: 15px 5px 15px 15px;
 }
 
 @media screen and (max-width:1160px){
-  .box{
+  #MA .box{
     width: 100%;
     max-width: 800px;
   }
-  .box_container{
+  #MA .box_container{
     flex-direction: row;
     justify-content: center;
   }
@@ -113,39 +113,39 @@ input[type="checkbox"]:checked ~ .box_content {
 
 @media screen and (max-width:900px){
   
-  .box_header_content span p{
+  #MA .box_header_content span p{
     display: inline-block;
   }
 }
 
 @media screen and (max-width:600px){
-  .box_header_content span p{
+  #MA .box_header_content span p{
     display:block;
   }
 }
 
 @media screen and (max-width:500px){
-  .box_header_content{
+  #MA .box_header_content{
     flex-direction: column;
     justify-content: center;
   }
 
-  .box_header_content span p{
+  #MA .box_header_content span p{
     display:inline-block;
   }
 
-  .box_header img{
+  #MA .box_header img{
     margin-bottom: 5px;
   }
 
-  .box_header_content span{
+  #MA .box_header_content span{
     margin-bottom: 20px;
   }
 }
 
 /* ========== */
 
-.card_container{
+#MA .card_container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -154,7 +154,7 @@ input[type="checkbox"]:checked ~ .box_content {
   gap: 10px; /* 卡片之間的間距 */
   margin: auto;
 }
-.card {
+#MA .card {
   min-width: calc(33.33% - 10px);
   width: 400px;
   height: 400px;
@@ -163,7 +163,7 @@ input[type="checkbox"]:checked ~ .box_content {
   display: block;
 }
 
-.card-inner {
+#MA .card-inner {
   width: 100%;
   min-height: 100%;
   align-items: stretch;
@@ -171,12 +171,12 @@ input[type="checkbox"]:checked ~ .box_content {
   transition: transform 0.6s; /* 翻轉動畫 */
 }
 
-.card-inner.flipped {
+#MA .card-inner.flipped {
   transform: rotateY(180deg);
 }
 
-.MA .card-front,
-.MA .card-back {
+#MA .card-front,
+#MA .card-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -188,7 +188,7 @@ input[type="checkbox"]:checked ~ .box_content {
   overflow: hidden;
 }
 
-.card-front img{
+#MA .card-front img{
   height: 100%;
   position: absolute;
   top: 20px;
@@ -198,7 +198,7 @@ input[type="checkbox"]:checked ~ .box_content {
   z-index: -2;
 }
 /* 白色漸層 */
-.white_gradient {
+#MA .white_gradient {
   position: absolute;
   top: 0;
   left: 0;
@@ -210,7 +210,7 @@ input[type="checkbox"]:checked ~ .box_content {
   z-index: -1;
 }
 /* 藍色漸層 */
-.blue_gradient {
+#MA .blue_gradient {
   position: absolute;
   top: 0;
   left: 0;
@@ -221,16 +221,16 @@ input[type="checkbox"]:checked ~ .box_content {
   z-index: -3;
 }
 
-.card-back {
+#MA .card-back {
   background: radial-gradient(circle at 50% 30%, #ecf9ff 20%, #ffffff 60%);
   transform: rotateY(180deg); /* 預設背面翻轉 */
 }
 
-.card-back:hover, .card-front:hover .blue_gradient{
+#MA .card-back:hover, .card-front:hover .blue_gradient{
   background: radial-gradient(circle at 50% 30%, #ecf9ff 40%, #ffffff);
 }
 
-.MA .card_content{
+#MA .card_content{
   width: calc(100% - 60px);  
   height: calc(100% - 60px);
   display: flex;
@@ -240,40 +240,40 @@ input[type="checkbox"]:checked ~ .box_content {
   z-index: 3;
 }
 
-.MA .card-front .card_content{
+#MA .card-front .card_content{
   align-items: start;
   justify-content: space-between;
 }
 
-.MA .card-front h3{
+#MA .card-front h3{
   margin-top: 20px;
 }
 
-.card-front p, .card-front h3{
+#MA .card-front p, .card-front h3{
   transition: margin 0.5s ease-in-out; /* 設定動畫 */
 }
-.card:hover .card-front p{
+#MA .card:hover .card-front p{
   color:#00657C;
   margin-bottom: 10px;
 }
 
-.card:hover .card-front h3{
+#MA .card:hover .card-front h3{
   color:#00657C;
   margin-top: 13px;
 }
 
-.MA .card-back p, .MA .card-back h3{
+#MA .card-back p, #MA .card-back h3{
   margin-bottom: 8px;
 }
 
 @media screen and (max-width:430px){
-  .card {
+  #MA .card {
     height: 460px;
   }
 }
 
 @media screen and (max-width:370px){
-  .card {
+  #MA .card {
     height: 500px;
   }
 }
@@ -284,7 +284,7 @@ input[type="checkbox"]:checked ~ .box_content {
 
 /* =======輪播圖========= */
 /* 輪播外框 */
-.carousel {
+#MA .carousel {
   position: relative;
   width: 100%;
   max-width: 700px;
@@ -296,20 +296,20 @@ input[type="checkbox"]:checked ~ .box_content {
 
 
 /* 圖片容器 */
-.carousel-track {
+#MA .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
 /* 單張圖片 */
-.carousel-slide {
+#MA .carousel-slide {
   width: 100%;
   /* height: 400px; */
   object-fit: cover;
 }
 
 /* 🔹 左右按鈕（圓形） */
-.carousel-btn {
+#MA .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -326,15 +326,15 @@ input[type="checkbox"]:checked ~ .box_content {
   justify-content: center;
 }
 
-.carousel-btn:hover {
+#MA .carousel-btn:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+#MA .prev { left: 10px; }
+#MA .next { right: 10px; }
 
 /* 🔹 小圓點 */
-.carousel-dots {
+#MA .carousel-dots {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -343,7 +343,7 @@ input[type="checkbox"]:checked ~ .box_content {
   gap: 10px;
 }
 
-.carousel-dots div {
+#MA .carousel-dots div {
   width: 8px;
   height: 8px;
   background: rgba(255, 255, 255, 0.5);
@@ -351,7 +351,7 @@ input[type="checkbox"]:checked ~ .box_content {
   cursor: pointer;
 }
 
-.carousel-dots .active {
+#MA .carousel-dots .active {
   background: white;
   width: 10px;
   height: 10px;
@@ -359,7 +359,7 @@ input[type="checkbox"]:checked ~ .box_content {
 
 /* 🔹 響應式 */
 @media (max-width: 700px) {
-  .carousel-slide {
+  #MA .carousel-slide {
       height: auto;
   }
 }
