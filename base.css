@@ -4,7 +4,7 @@ html{
 }
 
 
-html body .MA h2, .MA h3, .MA h4, .MA p, .MA a, .MA ol, .MA li, .MA span{
+html .MA h2, .MA h3, .MA h4, .MA p, .MA a, .MA ol, .MA li, .MA span{
     font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "Arial", sans-serif;
     font-size: 14px;
     color: #333;
@@ -14,7 +14,7 @@ html body .MA h2, .MA h3, .MA h4, .MA p, .MA a, .MA ol, .MA li, .MA span{
     word-wrap: break-word;
     text-align:justify;
 }
-html body .MA h2{
+html .MA h2{
     color:#1E335F;
     margin-bottom:40px;
     font-size: 20px;
@@ -24,7 +24,7 @@ html body .MA h2{
     font-weight:bold;
 }
 
-html body .MA h2::after{
+html .MA h2::after{
     content: "";
     width: 20px;
     height: 3px;
@@ -35,7 +35,7 @@ html body .MA h2::after{
     left: calc(50% - 10px);
 }
 
-html body .MA h3{
+html .MA h3{
     font-size: 18px;
     color:#00657C;
     line-height: 36px;
@@ -43,7 +43,7 @@ html body .MA h3{
 
 }
 
-html body .MA h4{
+html .MA h4{
     font-size: 15px;
     color:#00657C;
     line-height: 25px;
