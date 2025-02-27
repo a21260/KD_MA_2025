@@ -15,24 +15,24 @@ html .MA h2, .MA h3, .MA h4, .MA p, .MA a, .MA ol, .MA li, .MA span{
     text-align:justify;
 }
 html .MA h2{
-    color:#1E335F !important;;
-    margin-bottom:40px !important;;
-    font-size: 20px !important;;
-    line-height: 40px !important;;
-    text-align: center !important;;
-    position: relative !important;;
-    font-weight:bold !important;;
+    color:#1E335F !important;
+    margin-bottom:40px !important;
+    font-size: 20px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    position: relative !important;
+    font-weight:bold !important;
 }
 
 html .MA h2::after{
-    content: "" !important;;
-    width: 20px !important;;
-    height: 3px !important;;
-    background-color: #1E335F !important;;
-    display: block !important;;
-    position: absolute !important;;
-    top: calc(50% + 20px) !important;;
-    left: calc(50% - 10px) !important;;
+    content: "" !important;
+    width: 20px !important;
+    height: 3px !important;
+    background-color: #1E335F !important;
+    display: block !important;
+    position: absolute !important;
+    top: calc(50% + 20px) !important;
+    left: calc(50% - 10px) !important;
 }
 
 html .MA h3{
